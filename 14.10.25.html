@@ -39,33 +39,7 @@
             <input type="text" id="address" name="address" required>
             <input type="submit" value="Submit">
         </form>
-        <script>
-        document.getElementById('studentForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent normal form submission
-                
-            // Gather form data
-            var name = document.getElementById('name').value;
-            var enrollment = document.getElementById('enrollment').value;
-            var scholar = document.getElementById('scholar').value;
-            var branch = document.getElementById('branch').value;
-            var gender = document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').value : '';
-            var year =document.getElementById('yr').value;
-            var addr = document.getElementById('address').value;
-                
-            // Build content
-            var data = "Name: " + name + "\nEnrollment: " + enrollment + "\nScholar: " + scholar + "\nBranch: " + branch + "\nGender: " + gender + "\nYear: " + year +"\nAddress: "+addr;
-                
-            // Create a blob & link for download
-            var blob = new Blob([data], {type: 'text/plain'});
-            var a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = enrollment + ".txt"; // filename
-            a.click        ();
-                
-            // Optionally reset the form
-            document.getElementById('studentForm').reset();        
-        });        
-        </script>
     </div>
 </body>
 </html>
+
