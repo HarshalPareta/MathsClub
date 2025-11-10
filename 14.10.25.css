@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("back.png");
-    background-size: cover;
+    background-color: #1976d2;
     
 }
 
@@ -53,3 +52,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #004ba0;
 }
+
