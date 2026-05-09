@@ -1,0 +1,6 @@
+{
+  "name": "Tic-Tac-Toe Neo",
+  "description": "A polished, vibrant Tic-Tac-Toe game with local multiplayer and a simple CPU opponent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
